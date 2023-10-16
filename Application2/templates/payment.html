@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static' , filename='payment,.css')}}"
+    />
+  </head>
+  <body>
+    <div id="invisibleElement">
+      <center>
+        <div id="google_translate_element"></div>
+      </center>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "en",
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            },
+            "google_translate_element"
+          );
+        }
+      </script>
+      <script src="static\config.js"></script>
+      <script
+        type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      ></script>
+    </div>
+    <div class="container">
+      <h6>Checkout</h6>
+      <span>x</span>
+      <h1>Payment</h1>
+      <form action="">
+        <label for="country"
+          >Country
+          <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="Others">Others</option>
+          </select>
+        </label>
+        <label for="Pn"
+          >Phone Number
+          <input type="text" name="Pn" id="Pn" maxlength="12" />
+        </label>
+
+        <button>Pay 7000Rs/-</button>
+      </form>
+    </div>
+  </body>
+</html>

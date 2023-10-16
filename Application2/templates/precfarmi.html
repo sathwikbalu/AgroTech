@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Farming</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='ran.css')}}">
+    <style>
+        .box {
+            visibility: hidden;
+        }
+    </style>
+
+
+</head>
+<!-- <body style="background-color:white"> -->
+<header class="site-headers">
+    <center>
+        <div class="box" id="google_translate_element"></div>
+    </center>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            // Function to initiate the TTS
+            function speak() {
+              const textToSpeak = document.body.innerText; // Get all the content from the page
+              const speech = new SpeechSynthesisUtterance(textToSpeak);
+          
+              // Specify the voice for TTS (optional)
+              speech.voice = speechSynthesis.getVoices().find(voice => voice.name === 'Google UK English Female'); // Example voice selection
+          
+              // Trigger the speech
+              window.speechSynthesis.speak(speech);
+            }
+          </script>
+    <div class="wrapper">
+        <button class="submit" onclick="speak()">Speak</button>
+        <img src="prec.jpg" alt="">
+        <div class="text-box">
+            <h1><strong> Precision Farming</strong></h1>
+            <p>
+                    Precision farming is an approach where inputs are utilised in precise amounts to get increased average yields,
+                    compared to traditional cultivation techniques.
+                    In India, one major problem is the small field size. More than 58 per cent of operational holdings in the
+                    country have size less than one hectare (ha).
+               
+                <br>
+                <br>
+                
+                
+                
+                Why precision farming
+            
+                To increase agriculture productivity
+                Prevents soil degradation
+                Reduction of chemical application in crop production
+                Efficient use of water resources
+                Dissemination of modern farm practices to improve quality, quantity and reduced cost of production
+                Developing favourable attitudes
+                Precision farming changing the socio-economic status of farmers
+                Advantages
+            
+                Agronomical perspective
+                Technical perspective
+                Environmental perspective
+                Economic perspective
+                <br>
+                <br>
+                
+                
+                
+                Precision agriculture has also been enabled by unmanned aerial vehicles that are relatively inexpensive and can be
+                operated by novice pilots. These agricultural
+                drones can be equipped with multispectral or RGB cameras to capture many images of a field that can be stitched
+                together using photogrammetric methods to create
+                orthophotos. These multispectral images contain multiple values per pixel in addition to the traditional red, green
+                blue values such as near infrared and red-edge
+                spectrum values used to process and analyze vegetative indexes such as NDVI maps
+            
+            
+                Precision agriculture is a key component of the third wave of modern agricultural revolutions. The first
+                agricultural revolution was the increase of mechanized
+                agriculture, from 1900 to 1930. Each farmer produced enough food to feed about 26 people during this time.[15] The
+                1960s prompted the Green Revolution with new methods
+                of genetic modification, which led to each farmer feeding about 156 people.[15] It is expected that by 2050, the
+                global population will reach about 9.6 billion, and
+                food production must effectively double from current levels in order to feed every mouth. With new technological
+                advancements in the agricultural revolution of precision
+                farming, each farmer will be able to feed 265 people on the same acreage.[15]
+                <br>
+                <br>
+            
+                
+            
+                
+
+        </div>
+        <div class="spac">
+            
+            <u> FOR MORE INFORMATION CLICK ON THE BELOW LINKS:</u>
+            <a href="https://www.cropin.com/precision-agriculture">
+                <center>Press here for more information</center>
+            </a>
+            <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/precision-agriculture">
+                <center>Press here for more information</center>
+            </a>
+            </p>
+        </div>
+
+
+        </pre>
+        </section>
+
+        </body>
+
+</html>

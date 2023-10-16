@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static' , filename='aboutus.css')}}"
+    />
+    <title>About Us</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="invisibleElement">
+      <center>
+        <div id="google_translate_element"></div>
+      </center>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "en",
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            },
+            "google_translate_element"
+          );
+        }
+      </script>
+      <script src="static\config.js"></script>
+      <script
+        type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      ></script>
+    </div>
+    <div class="heading">
+      <h1>About Us</h1>
+      <p>We have provided the usage of sensors below</p>
+    </div>
+    <div class="container">
+      <section class="about">
+        <div class="about-image">
+          <img src="static/aboutus.png" alt="#" />
+        </div>
+        <div class="about-content">
+          <h2>Need Of Sensors</h2>
+          <p>
+            Soil NPK sensors are used to detect the content of nitrogen,
+            phosphorus, and potassium in the soil and judge the fertility of the
+            soil by detecting the conductivity transformation caused by
+            different concentrations in the soil.03 They are low-cost,
+            quick-responding, reasonably accurate, and portable sensors that can
+            be interconnected with Arduino for real-time monitoring of NPK
+            nutrient content in soil for smart agriculture.4 The JXCT Soil NPK
+            sensor is a low-cost, quick-responding, high-precision, and portable
+            sensor that works with Modbus RS485.2 It is suitable for detecting
+            the content of nitrogen, phosphorus, and potassium in the soil and
+            is also known as the soil nutrient speed tester.13 The sensors are
+            required for remote monitoring of soil health.5
+          </p>
+          <a
+            href="https://lastminuteengineers.com/soil-npk-sensor-arduino-tutorial/"
+            class="read-more"
+            >Read More</a
+          >
+        </div>
+      </section>
+    </div>
+    <div class="container1 feedback-form">
+      <div class="feedback-image">
+        <h1>FeedBack Form</h1>
+      </div>
+      <form method="post">
+        <h3>Drop Us a Feedback</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Phone Number"
+              />
+            </div>
+            <div class="form-group">
+              <p>Did You Get Your Answer?</p>
+              Yes<input type="radio" name="1" /> No<input
+                type="radio"
+                name="1"
+              />
+            </div>
+            <textarea
+              name="txtMsg"
+              claplaceholder="Your Message or Suggestion"
+              style="width: 600px; height: 150px; margin-bottom: 8px"
+              class="form-control"
+            ></textarea>
+            <div class="form-group">
+              <!-- <input
+                type="submit"
+                name="btnsubmit"
+                class="btnFeedback"
+                value="Send FeedBack"
+                style="outline: none"
+              /> -->
+              <button class="btn">
+                <a href="/weather" style="text-decoration: none">
+                  Send FeedBack</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <!-- <input
+                type="text"
+                name="TxtEmail"
+                class="form-control"
+                placeholder="Your Email"
+              /> -->
+              <p>Did You satisfy with our services?</p>
+              Yes<input type="radio" name="2" /> No<input
+                type="radio"
+                name="2"
+              />
+            </div>
+            <div class="fomr-group">
+              <p>Rate our page here</p>
+              <a href="/feedback">Click here</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

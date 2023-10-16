@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegratedPestManagement</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='ran.css')}}">
+    <style>
+        .box {
+            visibility: hidden;
+        }
+    </style>
+
+
+</head>
+<!-- <body style="background-color:white"> -->
+<header class="site-headers">
+    <center>
+        <div class="box" id="google_translate_element"></div>
+    </center>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            // Function to initiate the TTS
+            function speak() {
+              const textToSpeak = document.body.innerText; // Get all the content from the page
+              const speech = new SpeechSynthesisUtterance(textToSpeak);
+          
+              // Specify the voice for TTS (optional)
+              speech.voice = speechSynthesis.getVoices().find(voice => voice.name === 'Google UK English Female'); // Example voice selection
+          
+              // Trigger the speech
+              window.speechSynthesis.speak(speech);
+            }
+          </script>
+    <div class="wrapper">
+        <button class="submit" onclick="speak()">Speak</button>
+        <img src="int.jpg" alt="">
+        <div class="text-box">
+            <h2><strong>Integrated Pest Management (IPM)</strong></h12>
+            <p>
+                    Integrated Pest Management (IPM) is an effective and environmentally sensitive approach to pest
+                    management that relies on a combination of common-sense practices. IPM programs use current,
+                    comprehensive information on the lifecycles of pests and their interaction with the environment.
+                    This information, in combination with available pest control methods, is used to manage pest
+                    damage by the most economical means, and with the least possible hazard topeople, property,
+                    and the environment.
+            
+                    The IPM approach can be applied to both agricultural and non-agricultural settings, such as the
+                    home, garden, and workplace. IPM takes advantage of all appropriate pest management options
+                    including, but not limited to, the judicioususe of pesticides. In contrast, organic food
+                    production applies many of the same concepts as IPM but limits the use ofpesticides to those
+                    that are produced from natural sources, as opposed to synthetic chemicals.
+              <br><br>
+
+
+                IPM is not a single pest control method but, rather, a series of pest management evaluations, decisions and
+                controls.
+                In practicing IPM, growers who are aware of the potential for pest infestation follow a four-tiered approach.
+                The four steps include:
+            
+                Set Action Thresholds
+                Before taking any pest control action, IPM first sets an action threshold, a point at which pest populations or
+                environmental conditionsindicate that pest control action must be taken. Sighting a single pest does not always
+                mean control is needed. The level at which pestswill become an economic threat is critical to guide future pest
+                control decisions.
+            
+                Monitor and Identify Pests
+                Not all insects, weeds, and other living organisms require control. Many organisms are innocuous, and some are even
+                beneficial. IPM programswork to monitor for pests and identify them accurately, so that appropriate control
+                decisions
+                can be made in conjunction with action thresholds.This monitoring and identification removes the possibility that
+                pesticides will be used when they are not really needed or that the wrong kind of pesticide will be used.
+            
+                Prevention
+                As a first line of pest control, IPM programs work to manage the crop, lawn, or indoor space to prevent pests from
+                becoming a threat.In an agricultural crop, this may mean using cultural methods, such as rotating between different
+                crops, selecting pest-resistant varieties, and planting pest-free rootstock. These control methods can be very
+                effective and cost-efficient and present little to no risk to people or the environment.
+            
+                Control
+                Once monitoring, identification, and action thresholds indicate that pest control is required, and preventive
+                methods are no longereffective or available, IPM programs then evaluate the proper control method both for
+                effectiveness and risk. Effective, less risky pest controls are chosen first, including highly targeted chemicals,
+                such as pheromones to disrupt pest mating, or mechanical control,such as trapping or weeding. If further monitoring,
+                identifications and action thresholds indicate that less risky controls are notworking, then additional pest control
+                methods would be employed, such as targeted spraying of pesticides. Broadcast spraying of non-specific pesticides is
+                a last resort. <br><br>
+
+                <br><br>
+            
+                IPM is the selection and [16] use of pest control actions that will ensure favourable economic condition, ecological
+                and social
+                consequences[17] and is applicable to most agricultural, public health and amenity pest management situations. The
+                IPM process
+                starts with monitoring, which includes inspection and identification, followed by the establishment of economic
+                injury levels.
+                The economic injury levels set the economic threshold level. That is the point when pest damage (and the benefits of
+                treating
+                the pest) exceed the cost of treatment.[18] This can also be an action threshold level for determining an
+                unacceptable level
+                that is not tied to economic injury.
+
+            
+                <br><br>
+            
+
+            
+
+
+        </div>
+        <div class="spac">
+                            <u> FOR MORE INFORMATION CLICK ON THE BELOW LINKS: </u>
+                            <a href="https://food.ec.europa.eu/plants/pesticides/sustainable-use-pesticides/integrated-pest-management-ipm_en">
+                                <center>Click Here For More Info</center>
+                            </a>
+                            
+                            </p>
+
+        </div>
+
+
+        </pre>
+        </section>
+
+        </body>
+
+</html>

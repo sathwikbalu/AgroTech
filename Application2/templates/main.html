@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link rel="icon" href="static/icon.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static' , filename='main.css')}}"
+    />
+  </head>
+  <body>
+    <div class="top-banner">
+      <div class="container">
+        <!-- <div class="small-bold-text">Welcome to PhantomsSoltions</div> -->
+      </div>
+    </div>
+
+    <nav>
+      <div class="container main-nav flex">
+        <p><a href="/">PHANTOM SOLUTIONS</a></p>
+        <div class="nav-links">
+          <ul class="flex">
+            <li>
+              Language:
+              <center>
+                <div id="google_translate_element"></div>
+              </center>
+              <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement(
+                    {
+                      pageLanguage: "en",
+                      layout:
+                        google.translate.TranslateElement.InlineLayout.SIMPLE,
+                    },
+                    "google_translate_element"
+                  );
+                }
+              </script>
+              <script src="static\config.js"></script>
+              <script
+                type="text/javascript"
+                src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+              ></script>
+            </li>
+            <li><a href="#" class="hover-links">Products</a></li>
+            <li><a href="#" class="hover-links">Customer</a></li>
+            <li><a href="#" class="hover-links">Pricing</a></li>
+            <li><a href="#" class="hover-links">Resources</a></li>
+            <li>
+              <a href="/secound" class="hover-links primary-button"
+                >Sustainable Development</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container header-section flex">
+        <div class="header-left">
+          <h1>Accurate Results</h1>
+          <p>
+            We provide solution for the most accurate crop to be grown in your
+            locality based on the weather
+          </p>
+          <a href="/login" class="primary-button get-started-button">Sign In</a>
+        </div>
+        <div class="header-right">
+          <img src="static/location.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <section class="companies-section">
+      <div class="container">
+        <div class="small-bold-text companies-header">
+          We ensure customers safety
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li><a href="#pp">Privacy Policy</a></li>
+        <li><a href="#tc">Terms & Conditions</a></li>
+        <li><a href="#ab">About</a></li>
+        <li><a href="#cnt">Contact Us</a></li>
+        <li><a href="#inf">More Info</a></li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/39a88016a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

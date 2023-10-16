@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agroforestry</title>
+    <link rel="stylesheet"  type="text/css" href="{{ url_for('static' , filename='ran.css')}}">
+   
+    
+    <style>
+      .box {
+          visibility: hidden;
+      }
+  </style>
+</head>
+<!-- <body style="background-color:white"> -->
+    <header class="site-headers">
+        <center> <div class="box" id="google_translate_element"></div> </center>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      }
+  </script>
+  <script>
+    // Function to initiate the TTS
+    function speak() {
+      const textToSpeak = document.body.innerText; // Get all the content from the page
+      const speech = new SpeechSynthesisUtterance(textToSpeak);
+  
+      // Specify the voice for TTS (optional)
+      speech.voice = speechSynthesis.getVoices().find(voice => voice.name === 'Google UK English Male'); // Example voice selection
+  
+      // Trigger the speech
+      window.speechSynthesis.speak(speech);
+    }
+  </script>
+  
+
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<div class="wrapper">
+  <button class="submit" onclick="speak()">Speak</button>
+    <img src="agro.jpg" alt="">
+    <div class="text-box">
+      <p>
+        <p style="font-size: larger;"> <u> Different Types of Organic Fertilizer for Your Garden:</u></p>
+        <p>
+                Agroforestry is a term for practices where trees are combined with farming, as well as for the
+                interdisciplinary subject area embracing land use systems, at a range of scales from that of the field to
+                the planet, that involve interactions amongst trees, people, and agriculture.</p>
+       <p>s can be advantageous over conventional agricultural and forest production methods. They can
+    offer increased productivity; social, economic and environmental benefits, as well as greater diversity in the
+    ecological goods and services provided.[8] It is essential to note that these benefits are conditional on good
+    farm management. This includes choosing the right trees, as well as pruning them regularly etc. [9]
+    Organic farming methods.
+    
+    
+    Main challenges for agroforestry
+    Although the advantages of agroforestry are gaining attention internationally and a growing body of scientific
+    literature provides evidence for them, it faces many challenges and obstacles. Addressing them is what
+    constitutes the basis for FAO's actions. In its paper Advancing Agroforestry on the Policy Agenda: A guide for
+    decision-makers, FAO has recognized the following challenges and obstacles:
+    <br><br>
+    
+    
+    <br><br>
+    
+    Delayed return on investment: Despite the fact that trees become profitable as they produce positive net present
+    values over time, the breakeven point for some agroforestry systems may occur only after a number of years.
+    
+    
+    Under-developed markets: Markets for tree products are both less efficient and less developed than for crop and
+    livestock commodities and value chains related to agroforestry systems receive little support.
+    
+    
+    Emphasis on commercial agriculture: Agricultural policies often offer incentives for agriculture that promote
+    certain agricultural models, such as monoculture systems, and tax exemptions are usually aimed at industrial
+    agricultural production. Agricultural price supports or favourable credit terms which are granted for certain
+    agricultural activities but hardly ever for trees, are also discouraging agroforestry adoption.
+    <br><br>
+    
+    
+    <br><br>
+    Limited awareness of the advantages of agroforestry: Overdependence on conventional agricultural methods and
+    inadequate knowledge of sustainable approaches restrict the interested of policy-makers in agroforestry
+    development. This in turn influences negatively the amount of resources dedicated for research, dissemination,
+    market information and propagation of quality germplasm, which are all crucial for wide adoption of
+    agroforestry practices.</p>
+
+    </div></p>
+           <div class="spac">
+               <u> FOR MORE INFORMATION CLICK ON THE BELOW LINKS:</u> <br>
+                <a href="https://krishijagran.com/agripedia/organic-farming-different-types-of-organic-fertilizer-for-your-garden/"><center>Click Here For More Info</center> 
+                </a> <br>
+                <a href="https://krishijagran.com/agripedia/6-organic-techniques-for-effective-pest-management/"><center>Click Here For More Info</center> </a>
+                </p>
+            </div>
+            
+        
+            </pre>
+        </section>
+    
+</body>
+</html>

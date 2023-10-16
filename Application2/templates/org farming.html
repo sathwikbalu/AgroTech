@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Farming</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='ran.css')}}">
+    <style>
+        .box {
+            visibility: hidden;
+        }
+    </style>
+
+
+</head>
+<!-- <body style="background-color:white"> -->
+<header class="site-headers">
+    <center>
+        <div class="box" id="google_translate_element"></div>
+    </center>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            // Function to initiate the TTS
+            function speak() {
+              const textToSpeak = document.body.innerText; // Get all the content from the page
+              const speech = new SpeechSynthesisUtterance(textToSpeak);
+          
+              // Specify the voice for TTS (optional)
+              speech.voice = speechSynthesis.getVoices().find(voice => voice.name === 'Google UK English Female'); // Example voice selection
+          
+              // Trigger the speech
+              window.speechSynthesis.speak(speech);
+            }
+          </script>
+    <div class="wrapper">
+        <button class="submit" onclick="speak()">Speak</button>
+        <img src="org.jpg" alt="">
+        <div class="text-box">
+            <h2><strong>Organic Farming</strong></h2>
+
+<p>
+        Organic farming can be defined as a system of management and agricultural production that
+        combines a high level of biodiversity with environmental practices that preserve natural resources and has
+        rigorous standards for animal welfare. Furthermore, organic farming responds to consumer growing demand for
+        natural products and simultaneously allows to preserve the environment in the context of sustainable rural
+        development. The term organic farming can apply to the following categories of products:
+
+        Unprocessed products: vegetables, cereals, fruits, cotton, flowers, animals, eggs or milk;
+        Processed products for human consumption: cheese, bread or instantaneous meals;
+        Food for animals like organic soy cakes;
+        Materials for vegetative reproduction and seeds.<br><br>
+    
+
+    Organic farming can be beneficial on biodiversity and environmental protection at local level.
+    However, because organic farming has lower yields compared to conventional farming, additional
+    agricultural land is needed elsewhere in the world, which means that natural land has to be converted
+    into agricultural land. This can cause loss of biodiversity and negative climate effects that outweigh the
+    local environmental gains achieved.
+
+    Organic farming methods
+    <strong>Fertilizers</strong>
+    Since synthetic fertilizers are not used, building and maintaining a rich, living soil through the addition
+    of organic matter is a priority for organic farmers. Organic matter can be applied through the application of
+    manure, compost, and animal by-products, such as feather meal or blood meal. Due to the potential for harbouring
+    human pathogens, the USDA National Organic Standards mandate that raw manure must be applied no later than 90 or
+    120 days before harvest, depending on whether the harvested part of the crop is in contact with the ground.
+    Composted manure that has been turned 5 times in 15 days and reached temperatures between 55–77.2 °C (131–171 °F)
+    has no restrictions on application times. Compost adds organic matter, providing a wide range of nutrients for
+    plants, and adds beneficial microbes to the soil. Given that these nutrients are mostly in an unmineralized form
+    that cannot be taken up by plants, soil microbes are needed to break down organic matter and transform nutrients
+    into a bioavailable “mineralized” state. In comparison, synthetic fertilizers are already in mineralized form and
+    can be taken up by plants directly.
+
+    Soil is maintained by planting and then tilling in cover crops, which help protect the soil from erosion off-season
+    and provide additional organic matter. The tilling in of nitrogen-fixing cover crops, such as clover or alfalfa,
+    also
+    adds nitrogen to the soil. Cover crops are commonly planted before or after the cash crop season or in conjunction
+    with
+    crop rotation and can also be planted between the rows of some crops, such as tree fruits. Researchers and growers
+    are
+    working to develop organic farming “no-till” and reduced-tillage practices in order to further reduce erosion.
+    <br><br>
+    
+    <strong>Pest control</strong>
+    Organic pesticides are derived from naturally occurring sources. These include living organisms such as the bacteria
+    Bacillus
+    thuringiensis, which is used to control caterpillar pests, or plant derivatives such as pyrethrins (from the dried
+    flower heads
+    of Chrysanthemum cinerariifolium) or neem oil (from the seeds of Azadirachta indica). Mineral-based inorganic
+    pesticides such
+    as sulfur and copper are also allowed.
+
+    In addition to pesticides, organic pest control integrates biological, cultural, and genetic controls to minimize
+    pest damage.
+    Biological control utilizes the natural enemies of pests, such as predatory insects (e.g., ladybugs) or parasitoids
+    (e.g., certain wasps)
+    to attack insect pests. Pest cycles can be disrupted with cultural controls, of which crop rotation is the most
+    widely used. Finally,
+    traditional plant breeding has produced numerous crop varieties that are resistant to specific pests. The use of
+    such varieties and the
+    planting of genetically diverse crops provide genetic control against pests and many plant diseases.
+    <br><br>
+    </div>
+    
+
+        </div>
+        <div class="spac">
+            <u> FOR MORE INFORMATION CLICK ON THE BELOW LINKS:</u>
+            <a href="https://krishijagran.com/agripedia/organic-farming-different-types-of-organic-fertilizer-for-your-garden/">
+                <center>Press here for more information</center>
+            </a>
+            <a href="https://krishijagran.com/agripedia/6-organic-techniques-for-effective-pest-management/">
+                <center>Press here for more information</center>
+            </a>
+            </p>
+        </div>
+
+
+        </pre>
+        </section>
+
+        </body>
+
+</html>

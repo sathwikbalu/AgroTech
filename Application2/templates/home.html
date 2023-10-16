@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" href="static/icon.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Home Page</h1>
+    <div class="col-md-8">
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category,message in messages %}
+      <div class="alert alert-{{ category }}">{{message}}</div>
+      {% endfor %} {% endif %} {% endwith %} {% block content %}{% endblock
+      content%}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="static/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='dispwea.css')}}">
+</head>
+<body>
+<div class="tot">    
+<div class="head">
+    <h1>Phantom Solutions</h1>
+    <div class="links">
+    <a href="/weather">Home</a>
+    <a href="/aboutus">About Us</a>
+    <a href="#">Contact Us</a>
+    </div>
+</div>
+    <div class="wrapper">
+        
+        <form action="">
+            <h1>Weather Report</h1>
+            <div class="input-box">
+                
+                <h2>5-Day Weather Forecast for {{ weather_data.city.name }}, {{ weather_data.city.country }}</h2>
+                <div class="info_box">
+          {% with messages = get_flashed_messages(with_categories=true) %} {% if
+          messages %} {% for category,message in messages %}
+          <div class="alert alert-{{ category }}">{{message}}</div>
+          {% endfor %} {% endif %} {% endwith %} {% block content %}{% endblock
+          content%}
+        
+
+            {% for reading in weather_data.list %}
+            <br><br>
+            <p>Date and Time : {{ reading.dt_txt }}</p>
+            <p>Temperature : {{ reading.main.temp }}°C   <img src="http://openweathermap.org/img/wn/{{ reading.weather[0].icon }}.png" alt="#"></p>
+            
+            <p>Description : {{ reading.weather[0].description }}</p>
+            {% endfor %}
+            </div>
+    <!-- <table>
+        <tr>
+            <th>Date</th>
+            <th>Temperature (°C)</th>
+            <th>Description</th>
+        </tr>
+        {% for reading in weather_data.list %}
+            <tr>
+                <td>{{ reading.dt_txt }}</td>
+                <td>{{ reading.main.temp }}</td>
+                <td>{{ reading.weather[0].description }}</td>
+            </tr>
+        {% endfor %}
+    </table> -->
+            </div>
+            <div class="input-box">
+                
+            </div>
+            <div class="remember-forgot">
+                
+            </div>
+                  
+           
+           
+            <div class="register-link">
+           
+        </form>
+    
+    </div>
+</div>
+</body>
+</html>

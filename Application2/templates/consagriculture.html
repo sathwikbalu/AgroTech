@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConservationAgriculture</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='ran.css')}}">
+    <style>
+        .box {
+            visibility: hidden;
+        }
+    </style>
+
+
+</head>
+<!-- <body style="background-color:white"> -->
+<header class="site-headers">
+    <center>
+        <div class="box" id="google_translate_element"></div>
+    </center>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            // Function to initiate the TTS
+            function speak() {
+              const textToSpeak = document.body.innerText; // Get all the content from the page
+              const speech = new SpeechSynthesisUtterance(textToSpeak);
+          
+              // Specify the voice for TTS (optional)
+              speech.voice = speechSynthesis.getVoices().find(voice => voice.name === 'Google UK English Female'); // Example voice selection
+          
+              // Trigger the speech
+              window.speechSynthesis.speak(speech);
+            }
+          </script>
+    <div class="wrapper">
+        <img src="cons.jpg" alt="">
+        <div class="text-box">
+            <button class="submit" onclick="speak()">Speak</button>
+            <h2><strong> Conservation Agriculture</strong></h2>
+                        <p>
+                                Conservation Agriculture (CA) is a sustainable approach to agricultural production which aims to protect soil
+                                from erosion and degradation, improve its quality and biodiversity,
+                                contribute to the preservation of natural resources, water and air, whilst optimising yields.
+                                CA is based on three core principles: minimum soil disturbance, maintenance of permanent soil cover and use of
+                                crop rotations with a diversity of crop species.
+                                Related concepts include no tillage and groundcovers as a way of minimising soil disturbance.
+                                Economic benefits of the approach include labour and fuel saving in perennial crops, cost-savings in annual
+                                crops, increase of yields, reduction of run-off and erosion which
+                                contribute to increased agricultural production costs.
+                                Environmental benefits include: improvement of soil properties, increase of biodiversity, less erosion, less CO2
+                                emissions, increased carbon sequestration, less contamination
+                                of downstream water, reduction of floods and landslides.
+                            <br><br>
+                            
+                            <br><br>
+                            Conservation agriculture is largely the product of the collective efforts of a number of previous agricultural
+                            movements, including no-till agriculture, agroforestry,
+                            green manures/cover crops,direct planting/seeding, integrated pest management, and conservation tillage among many
+                            others. Yet CA is distinct from each of these
+                            so-called agricultural packages, even as it draws upon many of their core principles. This is because CA uses many
+                            of the available technologies in unison,
+                            resulting in something many believe to be much greater than the "sum of its parts."
+                            <br><br>
+                            
+                        
+                            <br><br>
+                            Conservation agriculture is based on the interrelated principles of minimal mechanical soil disturbance, permanent
+                            soil cover with living or dead plant material, and crop diversification
+                            through rotation or intercropping. It helps farmers to maintain and boost yields and increase profits, while
+                            reversing land degradation, protecting the environment and responding to
+                            growing challenges of climate change.To reduce soil disturbance, farmers practice zero-tillage farming, which allows
+                            direct planting without plowing or preparing the soil. The farmer
+                            seeds directly through surface residues of the previous crop.
+                            Zero tillage is combined with intercropping and crop rotation, which means either growing two or more crops at the
+                            same time on the same piece of land, or growing two different crops
+                            on the same land in a sequential manner. These are also core principles of sustainable intensification.
+                        
+                        
+                            <br><br>
+                        
+                            
+                        
+                            
+
+            
+
+        </div>
+        <div class="spac">
+            <u> FOR MORE INFORMATION CLICK ON THE BELOW LINKS:</u> <br>
+            <a
+                href="https://krishijagran.com/agripedia/organic-farming-different-types-of-organic-fertilizer-for-your-garden/">
+                <center>Click Here For More Info</center>
+            </a> <br>
+            <a href="https://krishijagran.com/agripedia/6-organic-techniques-for-effective-pest-management/">
+                <center>Click Here For More Info</center>
+            </a>
+            </p>
+        </div>
+
+
+        </pre>
+        </section>
+
+        </body>
+
+</html>

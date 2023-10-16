@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VermiComposting</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='ran.css')}}">
+  <style>
+    .box {
+      visibility: hidden;
+    }
+  </style>
+
+
+</head>
+<!-- <body style="background-color:white"> -->
+<header class="site-headers">
+  <center>
+    <div class="box" id="google_translate_element"></div>
+  </center>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      // Function to initiate the TTS
+      function speak() {
+        const textToSpeak = document.body.innerText; // Get all the content from the page
+        const speech = new SpeechSynthesisUtterance(textToSpeak);
+    
+        // Specify the voice for TTS (optional)
+        speech.voice = speechSynthesis.getVoices().find(voice => voice.name === 'Google UK English Female'); // Example voice selection
+    
+        // Trigger the speech
+        window.speechSynthesis.speak(speech);
+      }
+    </script>
+  <div class="wrapper">
+    <button class="submit" onclick="speak()">Speak</button>
+    <img src="vermi.jpg" alt="">
+    <div class="text-box">
+<h2><strong> Vermi Composting</strong></h2>
+        <p>
+          
+            Vermicomposting is the scientific method of making compost, by
+            using earthworms. They are commonly found living in soil, feeding
+            on biomass and excreting it in a digested form.
+        
+          <br /><br />
+        
+        
+          Vermiculture means “worm-farming”. Earthworms feed on the organic
+          waste materials and give out excreta in the form of “vermicasts”
+          that are rich in nitrates and minerals such as phosphorus,
+          magnesium, calcium and potassium. These are used as fertilizers and
+          enhance soil quality. Vermicomposting comprises two methods: Bed
+          Method: This is an easy method in which beds of organic matter are
+          prepared. Pit Method: In this method, the organic matter is
+          collected in cemented pits. However, this method is not prominent as
+          it involves problems of poor aeration and waterlogging.
+          <br /><br />
+        
+        
+        
+          The major benefits of vermicomposting are: Develops roots of the
+          plants. Improves the physical structure of the soil. Vermicomposting
+          increases the fertility and water-resistance of the soil. Helps in
+          germination, plant growth, and crop yield. Nurtures soil with plant
+          growth hormones such as auxins, gibberellic acid, etc.
+          <br /><br />
+        
+        
+          Following are the important disadvantages of vermicomposting: It is
+          a time-consuming process and takes as long as six months to convert
+          the organic matter into usable forms. It releases a very foul odour.
+          Vermicomposting is high maintenance. The feed has to be added
+          periodically and care should be taken that the worms are not flooded
+          with too much to eat. The bin should not be too dry or too wet. The
+          moisture levels need to be monitored periodically. They nurture the
+          growth of pests and pathogens such as fruit flies, centipede and
+          flies. Vermicomposting turns the kitchen waste and other green waste
+          into dark, nutrient-rich soil. Due to the presence of
+          microorganisms, it maintains healthy soil. Vermicomposting is an
+          eco-friendly process that recycles organic waste into compost and
+          produces valuable nutrients. <br /><br />
+        
+        
+    </div>
+    <div class="spac">
+      <center>
+      <a href="https://www.ecomena.org/vermicomposting/">Click here For More Info
+      </a>
+      </center>
+    </div>
+
+
+    </pre>
+    </section>
+
+    </body>
+
+</html>

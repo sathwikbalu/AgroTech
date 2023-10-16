@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covercropsandmulching</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='ran.css')}}">
+    <style>
+        .box {
+            visibility: hidden;
+        }
+    </style>
+
+
+</head>
+<!-- <body style="background-color:white"> -->
+<header class="site-headers">
+    <center>
+        <div class="box" id="google_translate_element"></div>
+    </center>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            // Function to initiate the TTS
+            function speak() {
+              const textToSpeak = document.body.innerText; // Get all the content from the page
+              const speech = new SpeechSynthesisUtterance(textToSpeak);
+          
+              // Specify the voice for TTS (optional)
+              speech.voice = speechSynthesis.getVoices().find(voice => voice.name === 'Google UK English Female'); // Example voice selection
+          
+              // Trigger the speech
+              window.speechSynthesis.speak(speech);
+            }
+          </script>
+    <div class="wrapper">
+        <img src="static/mul.jpg" alt="">
+        <button class="submit" onclick="speak()">Speak</button>
+        <div class="text-box">
+            <p>
+                    Cover crops help prevent soil erosion, regulate moisture, attract pollinators, assist in weed and
+                    pest management, serve as mulch and the source of green manureand organic matter, and are used for
+                    grazing or forage. Depending on the types of cover crops, they add or uptake nitrogen.
+                <br><br>
+
+                <br><br>
+                As the name hints, these are plants to cover soils for certain reasons. Unlike primary species, they
+                support secondary farmer’s needs rather than are grown for trade or human consumption. They improve
+                soil health, boost yields, and feed the cattle. However, it does not mean that these plants are some
+                exclusive species.
+                In alternative situations, they serve as cash cultures, and you can find them on the plate as well
+                (for example, buckwheat or corn). The difference is that in the case of fall cover crops, these
+                species are used as grasses.
+            
+                Farmers plant them in different seasons, either fall or late spring/summer, uniformly or between rows.
+                Some are winter-killed, and some require removal and residue management.
+                This practice is strongly welcomed in crop rotation, no-till, and organic farming. Smart farming
+                online tools assist in making knowledgeable decisions.
+                <br><br>
+
+            
+                <br><br>
+                Types Of Cover Crops
+                There are three main categories, depending on their properties and options for use: grasses, legumes,
+                and broadleaf non-legumes. In most cases, they combine several functions at a time,
+                like preventing erosion, improving soil quality, serving for grazing, among others.
+            
+                Benefits Of Cover Crops
+                Farmers plant cover crops to improve soil for certain reasons.
+            
+                Soil Health And Fertility
+                Roots of cover crops help prevent erosion from water and wind. Some species can adjust nutrients to more
+                ingestible forms for other cultures. Planting cover crops between rows, farmers get mulchas part of
+                integrated weed management. Furthermore, flowering inter-row species attract pollinators.
+            
+                </div>
+            
+                <br><br>
+            
+
+                <br><br>
+            
+            
+                
+            
+            </p>
+
+
+
+
+
+
+        </div>
+        <div class="spac">
+            <u> FOR MORE INFORMATION CLICK ON THE BELOW LINKS:</u>
+            <div style="font-size: x-large;"> <a href="http://satavic.org/mulching-green-manuring-and-cover-cropping/">
+                    <center>Click Here For More Info</center>
+            </div>
+            </a>
+        </div>
+
+
+        </pre>
+        </section>
+
+        </body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeedBack</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static' , filename='feedback.css')}}"
+    />
+    <script
+      src="https://kit.fontawesome.com/39a88016a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="invisibleElement">
+      <center>
+        <div id="google_translate_element"></div>
+      </center>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "en",
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            },
+            "google_translate_element"
+          );
+        }
+      </script>
+      <script src="static\config.js"></script>
+      <script
+        type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      ></script>
+    </div>
+    <div class="container">
+      <div class="feedbackbox">
+        <h1>Share Your Feedback!</h1>
+        <div class="emoji">
+          <div id="emoji">
+            <img src="static/images/poor.png" />
+            <img src="static/images/bad.png" />
+            <img src="static/images/okay.png" />
+            <img src="static/images/good.png" />
+            <img src="static/images/excellent.png" />
+          </div>
+        </div>
+        <div class="rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <button class="btn" onclick="location.href='/aboutus'">Submit</button>
+      </div>
+    </div>
+    <script>
+      var stars = document.getElementsByClassName("fa-solid");
+      var emoji = document.getElementById("emoji");
+      stars[0].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#e4e4e4";
+        stars[2].style.color = "#e4e4e4";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        emoji.style.transform = "translateX(0)";
+      };
+      stars[1].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#e4e4e4";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        emoji.style.transform = "translateX(-100px)";
+      };
+      stars[2].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#e4e4e4";
+        stars[4].style.color = "#e4e4e4";
+        emoji.style.transform = "translateX(-200px)";
+      };
+      stars[3].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#ffd93b";
+        stars[4].style.color = "#e4e4e4";
+        emoji.style.transform = "translateX(-300px)";
+      };
+      stars[4].onclick = function () {
+        stars[0].style.color = "#ffd93b";
+        stars[1].style.color = "#ffd93b";
+        stars[2].style.color = "#ffd93b";
+        stars[3].style.color = "#ffd93b";
+        stars[4].style.color = "#ffd93b ";
+        emoji.style.transform = "translateX(-400px)";
+      };
+    </script>
+  </body>
+</html>

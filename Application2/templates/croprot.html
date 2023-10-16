@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropRotation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename='ran.css')}}">
+    <style>
+        .box {
+            visibility: hidden;
+        }
+    </style>
+
+
+</head>
+<!-- <body style="background-color:white"> -->
+<header class="site-headers">
+    <center>
+        <div class="box" id="google_translate_element"></div>
+    </center>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            // Function to initiate the TTS
+            function speak() {
+              const textToSpeak = document.body.innerText; // Get all the content from the page
+              const speech = new SpeechSynthesisUtterance(textToSpeak);
+          
+              // Specify the voice for TTS (optional)
+              speech.voice = speechSynthesis.getVoices().find(voice => voice.name === 'Google UK English Female'); // Example voice selection
+          
+              // Trigger the speech
+              window.speechSynthesis.speak(speech);
+            }
+          </script>
+    <div class="wrapper">
+        <img src="rot.jpg" alt="">
+        <button class="submit" onclick="speak()">Speak</button>
+        <div class="text-box">
+            <h2><strong>CropRoatation</strong></h2>
+                <p>
+                        Crop rotation is the practice of planting different crops sequentially on the same plot of land to improve soil
+                        health, optimize nutrients in the soil, and combat pest and weed pressure.
+                
+                        For example, say a farmer has planted a field of corn. When the corn harvest is finished, he might plant beans,
+                        since corn consumes a lot of nitrogen and beans return nitrogen to the soil.
+                
+                        A simple rotation might involve two or three crops, and complex rotations might incorporate a dozen or more.
+                    
+                    
+                
+                    Crop rotation helps return nutrients to the soil without synthetic inputs.
+                
+                    The practice also works to interrupt pest and disease cycles, improve soil health by increasing biomass from
+                    different crops’ root structures, and increase biodiversity on the farm.
+                    Life in the soil thrives on variety, and beneficial insects and pollinators are attracted to the variety above
+                    ground, too.
+                    
+                
+                
+                    Crop choice is often related to the goal the farmer is looking to achieve with the rotation, which could be weed
+                    management, increasing available nitrogen in the soil, controlling
+                    for erosion, or increasing soil structure and biomass, to name a few.[5] When discussing crop rotations, crops are
+                    classified in different ways depending on what quality is
+                    being assessed: by family, by nutrient needs/benefits, and/or by profitability (i.e. cash crop versus cover
+                    crop).[6] For example, giving adequate attention to plant family
+                    is essential to mitigating pests and pathogens. However, many farmers have success managing rotations by planning
+                    sequencing and cover crops around desirable cash crops.[7]
+                    The following is a simplified classification based on crop quality and purpose.
+                
+                    Many crops which are critical for the market, like vegetables, are row crops (that is, grown in tight rows).[6]
+                    While often the most profitable for farmers, these crops are
+                    more taxing on the soil.[6] Row crops typically have low biomass and shallow roots: this means the plant contributes
+                    low residue to the surrounding soil and has limited effects
+                    on structure.[8] With much of the soil around the plant exposed to disruption by rainfall and traffic, fields with
+                    row crops experience faster break down of organic matter by microbes, leaving fewer nutrients for future plants.[8]
+                
+                    In short, while these crops may be profitable for the farm, they are nutrient depleting. Crop rotation practices
+                    exist to strike a balance between short-term profitability and long-term productivity.[7]
+
+        </div>
+        <div class="spac">
+        <u> FOR MORE INFORMATION CLICK ON THE BELOW LINKS:</u>
+        
+        <a href="https://www.conserve-energy-future.com/advantages-disadvantages-crop-rotation.php">
+            <center>Click Here For More Info</center>
+        </a>
+        
+        </p>
+        </div>
+
+
+        </pre>
+        </section>
+
+        </body>
+
+</html>
